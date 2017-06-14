@@ -1,0 +1,37 @@
+<div class="form-container" id="form">
+  <div class="form-header">
+    <div class="form-container-title">Edit Data</div>
+  </div>
+  <div class="form-container-subtitle">Here you can insert/update data in the existing tables</div>
+  <div class="form-sections">
+  <div class="form-content">
+    <label class="form-label-action"> Choose whether you would like to update or create data
+      <select class="form-select-box-action" name="action" #selectedAction (change)="getAction(selectedAction.value)">
+        <option value="create">Create</option>
+        <option value="update">Update</option>
+      </select>
+    </label>
+    <label class="form-label"> Select the table you want to edit
+      <select class="form-select-box" name="table" #selectedCategory (change)="getOption(selectedCategory.value)">
+        <option value="albums">Albums</option>
+        <option value="restaurants">Restaurants</option>
+        <option value="films">Films</option>
+      </select>
+    </label>
+    <label class="form-label">ID <input type="text" name="id" #id (change)="createNewClass('id', id.value)"/></label>
+    <label class="form-label">Name <input type="text" name="name" #name (change)="createNewClass('name', name.value)"/></label>
+    <label class="form-label"*ngIf="selectedOption === 'albums' || selectedOption === 'films'">Duration <input type="text" name="duration" #duration (change)="createNewClass('duration', duration.value)"/></label>
+    <label class="form-label"*ngIf="selectedOption === 'restaurants'">Stars <input type="text" name="stars" #stars (change)="createNewClass('stars', stars.value)"></label>
+    <label class="form-label"*ngIf="selectedOption === 'albums' || selectedOption === 'films'">Genre <input type="text" name="genre" #genre (change)="createNewClass('genre', genre.value)"></label>
+    <label class="form-label"*ngIf="selectedOption === 'restaurants'">Address <input type="text" name="address" #address (change)="createNewClass('address', address.value)"></label>
+    <label class="form-label"*ngIf="selectedOption === 'restaurants'">Theme <input type="text" name="theme" #theme (change)="createNewClass('theme', theme.value)"></label>
+    <label class="form-label"*ngIf="selectedOption === 'albums'">Artist <input type="text" name="artist" #artist (change)="createNewClass('artist', artist.value)"></label>
+    <label class="form-label"*ngIf="selectedOption === 'albums'">Release <input type="text" name="release" #release (change)="createNewClass('release', release.value)"></label>
+    <label class="form-label"*ngIf="selectedOption === 'films'">Language <input type="text" name="language" #language (change)="createNewClass('language', language.value)"></label>
+    <div class="form-submit">
+      <button class="form-button" (click)="submitData()">Submit</button>
+    </div>
+  </div>
+  </div>
+  <app-delete></app-delete>
+</div>

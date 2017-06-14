@@ -1,0 +1,30 @@
+.film-table-container {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.film-table-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.film-table {
+  padding-top: 30px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.film-table-col {
+  padding: 10px 50px;
+}
+
+.film-table-row {
+  padding: 10px 50px;
+  font-weight: 100;
+}
+
+th {
+  border-bottom: 1px solid black;
+}

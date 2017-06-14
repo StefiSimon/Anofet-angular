@@ -1,0 +1,38 @@
+
+.delete-container-subtitle {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.delete-content {
+  padding: 50px;
+}
+
+.delete-label {
+  padding-top: 20px;
+  display: block;
+  width: 500px;
+  text-align: right;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-left: 100px;
+}
+
+.delete-button {
+  margin: 50px;
+  padding: 10px 50px;
+  font-size: 15px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.error-message {
+  color: white;
+}

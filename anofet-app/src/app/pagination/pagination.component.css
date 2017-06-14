@@ -1,0 +1,12 @@
+.pagination-container {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 30px;
+}
+
+.pagination-select {
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+}

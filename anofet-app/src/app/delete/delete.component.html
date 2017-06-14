@@ -1,0 +1,11 @@
+<div class="delete-container">
+  <div class="delete-container-subtitle">Here you can delete data from the existing tables</div>
+
+  <div class="delete-content">
+    <label class="delete-label">ID <input type="text" name="id" #id/></label>
+    <div class="delete-submit">
+      <button class="delete-button" (click)="deleteData(id.value)">Delete</button>
+    </div>
+    <div class="error-message" *ngIf="displayError">No ID provided</div>
+  </div>
+</div>

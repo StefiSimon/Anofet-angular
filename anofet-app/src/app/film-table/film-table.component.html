@@ -1,0 +1,21 @@
+<div class="film-table-container">
+  <div class="film-table-title">Films</div>
+  <table class="film-table">
+    <thead>
+    <th class="film-table-col">ID</th>
+    <th class="film-table-col">Name</th>
+    <th class="film-table-col">Duration</th>
+    <th class="film-table-col">Genre</th>
+    <th class="film-table-col">Language</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let film of films">
+      <td class="film-table-row">{{film.id}}</td>
+      <td class="film-table-row">{{film.name}}</td>
+      <td class="film-table-row">{{film.duration}}</td>
+      <td class="film-table-row">{{film.genre}}</td>
+      <td class="film-table-row">{{film.language}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

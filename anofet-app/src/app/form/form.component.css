@@ -1,0 +1,74 @@
+.form-container {
+  background-color: black;
+  color: white;
+  padding: 100px 200px;
+  text-align: center;
+}
+
+.form-content {
+  padding: 50px 50px;
+}
+
+.form-container-title {
+  font-size: 20px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.form-container-subtitle {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.form-select-box {
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.form-label {
+  padding-top: 20px;
+  display: block;
+  width: 500px;
+  text-align: right;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-left: 100px;
+}
+
+.form-button {
+  margin: 50px;
+  padding: 10px 50px;
+  font-size: 15px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.form-label-action {
+  padding: 30px;
+  text-align: left;
+}
+
+.form-select-box-action {
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .form-container {
+    padding: 50px;
+  }
+}
+
+
+

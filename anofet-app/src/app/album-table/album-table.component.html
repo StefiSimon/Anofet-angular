@@ -1,0 +1,38 @@
+<div class="album-table-container" id="tables">
+  <div class="album-table-title">Albums</div>
+  <div class="album-table-search">
+    <label> Select the field you want to search by
+      <select class="search-label" name="table" #selectedField (change)="getOption(selectedField.value)">
+        <option value="name">Name</option>
+        <option value="duration">Duration</option>
+        <option value="genre">Genre</option>
+        <option value="artist">Artist</option>
+        <option value="release">Release</option>
+      </select>
+    </label>
+    Type something here
+    <input class="search-input" stype="text" #tags/>
+    <button class="search-button" (click)="searchItem(tags.value)">Search</button>
+  </div>
+  <table class="album-table">
+    <thead>
+      <th class="album-table-col">ID</th>
+      <th class="album-table-col">Name</th>
+      <th class="album-table-col">Duration</th>
+      <th class="album-table-col">Genre</th>
+      <th class="album-table-col">Artist</th>
+      <th class="album-table-col">Release</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let album of albums">
+        <td class="album-table-row">{{album.id}}</td>
+        <td class="album-table-row">{{album.name}}</td>
+        <td class="album-table-row">{{album.duration}}</td>
+        <td class="album-table-row">{{album.genre}}</td>
+        <td class="album-table-row">{{album.artist}}</td>
+        <td class="album-table-row">{{album.release}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="contentExists" class="error-message">No data found</div>
+</div>

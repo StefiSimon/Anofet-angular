@@ -1,0 +1,21 @@
+<div class="restaurant-table-container">
+  <div class="restaurant-table-title">Restaurants</div>
+  <table class="restaurant-table">
+    <thead>
+    <th class="restaurant-table-col">ID</th>
+    <th class="restaurant-table-col">Name</th>
+    <th class="restaurant-table-col">Stars</th>
+    <th class="restaurant-table-col">Address</th>
+    <th class="restaurant-table-col">Theme</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let restaurant of restaurants">
+      <td class="restaurant-table-row">{{restaurant.id}}</td>
+      <td class="restaurant-table-row">{{restaurant.name}}</td>
+      <td class="restaurant-table-row">{{restaurant.stars}}</td>
+      <td class="restaurant-table-row">{{restaurant.address}}</td>
+      <td class="restaurant-table-row">{{restaurant.theme}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

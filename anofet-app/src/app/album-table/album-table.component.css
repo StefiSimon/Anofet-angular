@@ -1,0 +1,56 @@
+.album-table-container {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.album-table-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.error-message {
+  text-align: center;
+  padding: 50px;
+}
+.album-table {
+  padding-top: 30px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.album-table-col {
+  padding: 10px 50px;
+}
+
+.album-table-row {
+  padding: 10px 50px;
+  font-weight: 100;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+.search-label {
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.search-input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.search-button {
+  padding: 10px 50px;
+  font-size: 15px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  cursor: pointer;
+}
+
